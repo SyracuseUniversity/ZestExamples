@@ -37,5 +37,5 @@ has completed.  Check the output with
 cat output/hostname.out
 ```
 
-It will contain the name of the node where HTCondor placed the job.
+It will contain the name of the node where Slurm placed the job.
 
