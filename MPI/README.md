@@ -2,7 +2,7 @@
 
 This is an example written in C, taken from (the offical OpenMPI
 respository)https://github.com/open-mpi/ompi].  This example creates a number
-of processes that communicate over MPI and then passes a simple message around
+of processes that communicate over MPI and pass a simple message around
 the processes in a ring.  See the comments in the c file for more details.
 
 To run it, first download the code:
