@@ -42,7 +42,7 @@ After making these changes log out and log back in.
 ## Install additional packages
 
 You can now use the `conda` command to install additional packages you'll need.
-For example to install numpy
+To install mpi4py:
 
 ```bash
 conda install mpi4py
