@@ -36,7 +36,7 @@ happen too fast to notice.  If `squeue` reports that you have no jobs then it
 has completed.  Check the output with
 
 ```bash
-cat output/ring.out
+cat output/ring-*.out
 ```
 
 It will contain the name of the node where Slurm placed the job.
