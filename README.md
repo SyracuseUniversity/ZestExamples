@@ -7,7 +7,7 @@ use [git](https://www.w3schools.com/git/git_intro.asp?remote=github)
 to download them into your home directory on the cluster which will allow you to run them directly.  The command is
 
 ```
-git clone http://github.com/SyracuseUniversity/OrangeGridExamples
+git clone http://github.com/SyracuseUniversity/ZestExamples
 ```
 
 ## Getting Help? 
