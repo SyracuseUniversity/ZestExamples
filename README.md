@@ -12,4 +12,4 @@ git clone http://github.com/SyracuseUniversity/ZestExamples
 
 ## Getting Help? 
 
-Additional how-to documentation, such as connecting to clusters and running jobs, is [available in Answers](https://answers.syr.edu/x/tM5DBg). If you would like to contact us directly for assistance or requesting access, email [researchcomputing@syr.edu](mailto:researchcomputing@syr.edu).
+Additional how-to documentation, such as connecting to clusters and running jobs, is [available in Answers]([https://su-jsm.atlassian.net/l/cp/rXELeT7T]). If you would like to contact us directly for assistance or requesting access, email [researchcomputing@syr.edu](mailto:researchcomputing@syr.edu).
