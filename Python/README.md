@@ -17,8 +17,8 @@ using that to manage your environment.  To install Conda:
 ```bash
 wget https://github.com/conda-forge/miniforge/releases/download/24.7.1-0/Miniforge-pypy3-24.7.1-0-Linux-x86_64.sh
 
-bash Miniforge-pypy3-24.7.1-0-Linux-x86_64.sh  -b -p $HOME/miniconda3
-eval "$(${HOME}/miniconda3/bin/conda shell.bash hook)"
+bash Miniforge-pypy3-24.7.1-0-Linux-x86_64.sh  -b -p $HOME/miniforge
+eval "$(${HOME}/miniforge/bin/conda shell.bash hook)"
 conda init
 ```
 
