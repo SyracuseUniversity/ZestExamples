@@ -1,7 +1,7 @@
-# Gromacs Slurm Job Example 
-This example demonstrates running a **very small** GROMACS job on Zest’s GPU partitions.  
+# GROMACS Slurm Job Example 
+This example demonstrates running a **very small** GROMACS job on Zest’s GPU partitions. The simulation is a tiny water box, pre-built into `small_test.tpr` so no setup steps are required.  
 
-The simulation is a tiny water box, pre-built into `small_test.tpr` so no setup steps are required.  
+Users new to Gromacs are encourage to review the [official GROMACS documentation](https://www.gromacs.org/) and a more complext [tutorial](http://www.mdtutorials.com/gmx/lysozyme/index.html). 
 # Files  
 - `gromacs_example.sh` – SLURM batch script for submitting the job.  
 - `small_test.tpr` – Pre-generated GROMACS run file (tiny water box).  
@@ -54,5 +54,5 @@ gmx grompp -f minim.mdp -c processed.gro -p topol.top -o small_test.tpr -maxwarn
 Once generated, small_test.tpr can be submitted with the provided SLURM script to run a short GPU test job.  
 # Additional Resources  
 You can find additional Zest information [in Answers](https://answers.atlassian.syr.edu/wiki/x/YAfJCQ).  
-For Gromacs assistance, see [the official Gromacs documentation](https://www.gromacs.org/).  
+For GROMACS assistance, see [the official GROMACS documentation](https://www.gromacs.org/).  
 As always, questions can be directed to researchcomputing@syr.edu. 
