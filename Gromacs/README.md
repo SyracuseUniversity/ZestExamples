@@ -6,7 +6,7 @@ The simulation is a tiny water box, pre-built into `small_test.tpr` so no setup 
 - `gromacs_example.sh` – SLURM batch script for submitting the job.  
 - `small_test.tpr` – Pre-generated GROMACS run file (tiny water box).  
 # Running the Sample Job  
-Once you have the [submission file]() in your home directory, you can edit it as needed and submit with the following:  
+Once you have the [submission file](https://github.com/SyracuseUniversity/ZestExamples/blob/main/Gromacs/gromacs_example.sh) in your home directory, you can edit it as needed and submit with the following:  
 ```
 sbatch gromacs_example.sh
 ```
