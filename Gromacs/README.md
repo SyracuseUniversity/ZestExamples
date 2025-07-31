@@ -54,5 +54,5 @@ gmx grompp -f minim.mdp -c processed.gro -p topol.top -o small_test.tpr -maxwarn
 Once generated, small_test.tpr can be submitted with the provided SLURM script to run a short GPU test job.  
 # Additional Resources  
 You can find additional Zest information [in Answers](https://answers.atlassian.syr.edu/wiki/x/YAfJCQ).  
-For Gromacs assistance, see [the official Gromacs documentation](https://www.gromacs.org/). 
+For Gromacs assistance, see [the official Gromacs documentation](https://www.gromacs.org/).  
 As always, questions can be directed to researchcomputing@syr.edu. 
