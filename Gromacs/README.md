@@ -2,7 +2,7 @@
 This example demonstrates running a **very small** GROMACS job on Zest’s GPU partitions.  
 
 The simulation is a tiny water box, pre-built into `small_test.tpr` so no setup steps are required.  
-# File  
+# Files  
 - `gromacs_example.sh` – SLURM batch script for submitting the job.  
 - `small_test.tpr` – Pre-generated GROMACS run file (tiny water box).  
 # Running the Sample Job  
