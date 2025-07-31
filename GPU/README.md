@@ -4,7 +4,7 @@ This example demonstrates how to submit a very simple job to the **GPU partition
 It requests a single GPU, prints basic job information, displays GPU details with `nvidia-smi`, and reports the CUDA compiler version.  
 Note that you can request up to four (4) GPUs in Zest if your code/scripts can utilize them.  
 # Running the Sample Job  
-Once you have the [submission file]() in your home directory, you can edit it as needed and submit with the following:  
+Once you have the [submission file](https://github.com/SyracuseUniversity/ZestExamples/blob/main/GPU/hello_gpu.sh) in your home directory, you can edit it as needed and submit with the following:  
 ```
 sbatch hello_gpu.sh
 ```
