@@ -10,7 +10,7 @@ sbatch hello_gpu.sh
 ```
 # Reviewing the Output  
 To review the output, you can locate the output file in the working directory.  
-You're output should look similar to the output found on the [example output page]()  
+You're output should look similar to the output found on the [example output page](https://github.com/SyracuseUniversity/ZestExamples/blob/main/GPU/hello_gpu.out)  
 # Additional Resources  
 You can find additional Zest information [in Answers](https://answers.atlassian.syr.edu/wiki/x/YAfJCQ).  
 As always, questions can be directed to researchcomputing@syr.edu. 
