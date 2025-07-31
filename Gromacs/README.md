@@ -1,4 +1,4 @@
-# Gromacs Slumr Job Example 
+# Gromacs Slurm Job Example 
 This example demonstrates running a **very small** GROMACS job on Zest’s GPU partitions.  
 
 The simulation is a tiny water box, pre-built into `small_test.tpr` so no setup steps are required.  
