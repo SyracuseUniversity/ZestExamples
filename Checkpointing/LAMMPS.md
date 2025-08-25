@@ -5,18 +5,19 @@ This example uses LAMMPS `restart` files and resumes with `read_restart`. Genera
 ## Example SBATCH (`lammps.sbatch`)  
 
 ```bash
-#!/bin/bash
-#SBATCH -J lmp_md
-#SBATCH -A your_account
+#!/bin/bash -l
+#SBATCH -J lmp_mpi
 #SBATCH -p your_partition
+#SBATCH -A your_account
 #SBATCH -n 32
 #SBATCH -t 08:00:00
-#SBATCH --signal=B:USR1@120   # optional, gives a little time before timeout
+#SBATCH --signal=B:USR1@120   # optional
 
-module load lammps     # or conda activate lammps
+# IMPORTANT: do NOT load system OpenMPI when using the conda MPICH build
+conda activate lammps-mpi    # env created with: conda create -n lammps-mpi -c conda-forge lammps mpich mpi4py
 
-# Use srun if your site prefers it; adjust executable name (lmp, lmp_mpi, ...)
-srun -n ${SLURM_NTASKS} lmp -in in.md
+mpiexec -n ${SLURM_NTASKS} lmp -in in.md
+# (mpiexec and mpirun both work with MPICH; use whichever the env provides)
 ```  
 
 ## Input File (in.md)  
