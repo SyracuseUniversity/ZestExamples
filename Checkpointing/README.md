@@ -158,8 +158,8 @@ Slurm itself does not automatically checkpoint user processes. To minimize lost 
 
 **Gromacs** and **LAMMPS** both support checkpointing:  
 
-- [Checkpointing in Gromacs](https://manual.gromacs.org/current/user-guide/managing-simulations.html) (use `.cpt` files with `-cpt`, `-cpo`, `-cpi`, and optionally stop before walltime with `-maxh`).  See the [GROMACS working example]().   
-- [Checkpointing in LAMMPS](https://docs.lammps.org/restart.html) with the `restart` command.  See the [LAMMPS working example]().  
+- [Checkpointing in Gromacs](https://manual.gromacs.org/current/user-guide/managing-simulations.html) (use `.cpt` files with `-cpt`, `-cpo`, `-cpi`, and optionally stop before walltime with `-maxh`).  See the [GROMACS working example](https://github.com/SyracuseUniversity/ZestExamples/blob/main/Checkpointing/GROMACS.md).   
+- [Checkpointing in LAMMPS](https://docs.lammps.org/restart.html) with the `restart` command.  See the [LAMMPS working example](https://github.com/SyracuseUniversity/ZestExamples/blob/main/Checkpointing/LAMMPS.md).  
 
 ## The best way to do checkpointing...  
 
