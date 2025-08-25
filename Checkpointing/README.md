@@ -110,7 +110,7 @@ None of these solutions is inherently better or worse than the others, choosing 
 
 As a general rule programs will need preserve all information that they require to resume, as in the sum example which had to save both the counter and the total so far. Often this will mean the value of all variables and data structures. When there are many of these saving them all individually may be inconvenient, and writing them all out as strings may require additional formatting and parsing code.  
 
-Much of this can be simplified using the Python (Pickle)[https://docs.python.org/3/library/pickle.html] library, which can dump most Python data types to a file. In combination with a custom class this can greatly simplify checkpointing.  
+Much of this can be simplified using the Python [Pickle](https://docs.python.org/3/library/pickle.html) library, which can dump most Python data types to a file. In combination with a custom class this can greatly simplify checkpointing.  
 
 ```python
 #!/usr/bin/env python
@@ -143,7 +143,7 @@ with checkpoint.open('wb') as f_out:
 
 ## Additional considerations for multi-threaded applications  
 
-Using multiple threads or processes can greatly speed up programs by distributing the work over multiple CPUs, and the Python (Mulitiprocessing)[https://docs.python.org/3/library/multiprocessing.html] and (Threading)[https://docs.python.org/3/library/threading.html] libraries make it easy to utilize this kind of parallelism. However, some care must be taken to ensure that checkpoints are consistent, meaning they must represent a program state that "makes sense" in the context of what the program is doing. If one thread is creating a checkpoint while another thread is changing data that is being written then the resulting checkpoint may be broken. Returning to the sum example, it's conceivable that the checkpoint might save the state while i=20 but total has already been modified to include terms up to i=25.  
+Using multiple threads or processes can greatly speed up programs by distributing the work over multiple CPUs, and the Python [Mulitiprocessing](https://docs.python.org/3/library/multiprocessing.html) and [Threading](https://docs.python.org/3/library/threading.html) libraries make it easy to utilize this kind of parallelism. However, some care must be taken to ensure that checkpoints are consistent, meaning they must represent a program state that "makes sense" in the context of what the program is doing. If one thread is creating a checkpoint while another thread is changing data that is being written then the resulting checkpoint may be broken. Returning to the sum example, it's conceivable that the checkpoint might save the state while i=20 but total has already been modified to include terms up to i=25.  
 
 This is an example of a much more general problem of keeping shared data consistent across multiple threads, which in general can be very difficult and is beyond the scope of this document. For now just note that this is something to be aware of.  
 
@@ -158,8 +158,8 @@ Slurm itself does not automatically checkpoint user processes. To minimize lost 
 
 **Gromacs** and **LAMMPS** both support checkpointing:  
 
-- (Checkpointing in Gromacs)[https://manual.gromacs.org/current/user-guide/managing-simulations.html] (use `.cpt` files with `-cpt`, `-cpo`, `-cpi`, and optionally stop before walltime with `-maxh`).  See the GROMACS working example.   
-- (Checkpointing in LAMMPS)[https://docs.lammps.org/restart.html] with the `restart` command.  See the LAMMPS working example.  
+- [Checkpointing in Gromacs](https://manual.gromacs.org/current/user-guide/managing-simulations.html) (use `.cpt` files with `-cpt`, `-cpo`, `-cpi`, and optionally stop before walltime with `-maxh`).  See the [GROMACS working example]().   
+- [Checkpointing in LAMMPS](https://docs.lammps.org/restart.html) with the `restart` command.  See the [LAMMPS working example]().  
 
 ## The best way to do checkpointing...  
 
