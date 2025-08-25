@@ -15,8 +15,7 @@ This example uses GROMACS .cpt checkpoints and resumes with -cpi if a checkpoint
 #SBATCH -t 24:00:00
 #SBATCH --signal=B:USR1@180   # optional, gives time before timeout
 
-module load gromacs         # or: source ~/miniforge3/etc/profile.d/conda.sh && conda activate gromacs
-# If your site uses MPI GROMACS: replace the last line with 'srun gmx_mpi mdrun ...'
+module load gromacs
 
 # Resume if a checkpoint exists
 CPI=""
