@@ -1,0 +1,6 @@
+# Scripts in this repository are run on Linux, keep Unix line endings everywhere
+# even when the repository is checked out on Windows.
+* text=auto eol=lf
+*.png binary
+*.tpr binary
+*.sif binary
