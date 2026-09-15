@@ -1,0 +1,112 @@
+===== SLURM Job Info =====
+Job ID: 3127734
+Job Name: hello_gpu
+Node List: node1224
+Allocated GPUs: 1
+CUDA_VISIBLE_DEVICES: 3
+==========================
+===== GPU Info =====
+Mon Sep 14 16:14:19 2026       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 545.23.08              Driver Version: 545.23.08    CUDA Version: 12.3     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     On  | 000040F9:00:00.0 Off |                    0 |
+|  0%   34C    P0              74W / 300W |  16999MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     On  | 00004B95:00:00.0 Off |                    0 |
+|  0%   34C    P0              79W / 300W |   1466MiB / 46068MiB |     17%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     On  | 00008318:00:00.0 Off |                    0 |
+|  0%   29C    P8              21W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   3  NVIDIA A40                     On  | 0000EEC1:00:00.0 Off |                    0 |
+|  0%   28C    P8              24W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A    155068      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155069      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155070      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155071      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155072      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155073      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155074      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155075      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155076      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155077      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155079      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155080      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155081      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155082      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155083      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155084      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155085      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155086      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155087      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155088      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155089      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155090      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155091      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155092      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155093      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155094      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155095      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155096      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155098      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155099      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155100      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155101      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155102      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155103      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155104      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155105      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155106      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155107      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155108      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155109      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155114      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155123      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155138      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155144      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155147      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155152      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155153      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155157      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155160      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155161      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155164      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155167      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155171      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155176      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155182      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155195      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155201      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155212      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155217      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155218      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155221      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155226      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155229      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    0   N/A  N/A    155235      C   ...Jun2025/cmake/build/bin/lmp_gpu_mpi      260MiB |
+|    1   N/A  N/A    160930      C   python                                     1454MiB |
++---------------------------------------------------------------------------------------+
+====================
+===== CUDA Test =====
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2023 NVIDIA Corporation
+Built on Wed_Nov_22_10:17:15_PST_2023
+Cuda compilation tools, release 12.3, V12.3.107
+Build cuda_12.3.r12.3/compiler.33567101_0
+====================

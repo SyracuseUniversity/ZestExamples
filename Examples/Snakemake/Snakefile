@@ -1,0 +1,41 @@
+# Sum of squares workflow.
+#
+#   snakemake --cores 5 sum_of_squares.txt                                     # run locally
+#   snakemake --executor slurm --jobs 5 --latency-wait 60 sum_of_squares.txt   # one Slurm job per rule
+#
+# The `square` rule runs once for each i in 1..5 (the five runs are independent
+# and can go in parallel), then `sum` waits for all of them and adds the results.
+
+rule square:
+    output:
+        "squares/square_{i}.txt"
+    resources:
+        slurm_partition="compute_zone2,normal",
+        runtime=5,          # minutes
+        mem_mb=1000,
+    run:
+        i = int(wildcards.i)
+
+        result = i ** 2
+
+        with open(output[0], "w") as f:
+            f.write(str(result))
+
+rule sum:
+    input:
+        expand("squares/square_{i}.txt", i=range(1, 6))
+    output:
+        "sum_of_squares.txt"
+    resources:
+        slurm_partition="compute_zone2,normal",
+        runtime=5,
+        mem_mb=1000,
+    run:
+        total = 0
+
+        for file in input:
+            with open(file, "r") as f:
+                total += int(f.read().strip())
+
+        with open(output[0], "w") as f:
+            f.write(f"{total}\n")
