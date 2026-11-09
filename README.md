@@ -26,6 +26,7 @@ These examples discuss general techniques for optimizing performance and through
   * [Checkpointing](Examples/Checkpointing): Learn how to save work that your jobs are doing, so if they are interrupted or hit their time limit they can be requeued and restart where they left off.  Includes worked examples for GROMACS and LAMMPS.
   * [Parallelism](Examples/Parallelism): Learn how to divide a task into lots of smaller tasks that can run independently so they can spread out over the cluster, using job arrays and job dependencies.
   * [File management](Examples/FileManagement): Learn how to arrange your data into chunks that are both more efficient for later analyses and perform better on the cluster.
+  * [Sharing files](https://github.com/SyracuseUniversity/OrangeGridExamples/tree/main/Examples/SharingFiles): Learn how to let specific colleagues read or write a folder in your home directory.  The guide lives in the OrangeGrid examples, and the commands are the same on Zest.
   * [multipleJobs](Examples/multipleJobs): Learn how to run multiple jobs from one batch script with a job array.
   * [SlurmDiagnostics](Examples/SlurmDiagnostics): Check the status of the cluster and of your own jobs.
 
